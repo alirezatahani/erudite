@@ -4,7 +4,14 @@
   </v-sheet>
   <div v-else>
     <v-row>
-      <v-col class="book-card" lg="4" v-for="(item, i) in data" :key="i">
+      <v-col
+        class="book-card"
+        sm="6"
+        md="4"
+        lg="4"
+        v-for="(item, i) in data"
+        :key="i"
+      >
         <router-link
           @click.native="() => addToVisitedMethod(item)"
           :to="`book/${item.id}`"
@@ -36,7 +43,7 @@
     </v-row>
     <br />
     <v-row>
-      <v-col lg="12">
+      <v-col sm="12" md="12" lg="12">
         <v-pagination
           @input="next"
           v-model="meta.current.page"

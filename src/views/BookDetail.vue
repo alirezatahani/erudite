@@ -1,9 +1,9 @@
 <template>
   <v-row class="row">
-    <v-col cols="6">
+    <v-col lg="6" md="6" sm="12">
       <img :src="data.formats['image/jpeg']" />
     </v-col>
-    <v-col cols="6">
+    <v-col lg="6" md="6" sm="12">
       <v-row>
         <v-col cols="12">
           <h1>{{ data.title }}</h1>

@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col lg="4" v-for="(item, i) in data" :key="i">
+    <v-col sm="6" md="4" lg="4" v-for="(item, i) in data" :key="i">
       <router-link :to="`book/${item.id}`">
         <v-card min="400">
           <v-img height="250" :src="item.formats['image/jpeg']"></v-img>
